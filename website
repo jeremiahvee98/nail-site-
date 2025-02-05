@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nail & Sewing Bookings</title>
+    <style>
+        body {
+            min-height: 100vh;
+            background-color: #fff5f7;
+            color: #1a202c;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+        }
+        header {
+            font-size: 1.875rem;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+        }
+        main {
+            max-width: 32rem;
+            background-color: #ffffff;
+            padding: 1.5rem;
+            border-radius: 1.5rem;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+        p {
+            font-size: 1.125rem;
+            color: #4a5568;
+            margin-bottom: 1rem;
+        }
+        button {
+            background-color: #ed64a6;
+            color: #ffffff;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #d53f8c;
+        }
+    </style>
+</head>
+<body>
+    <header>Nail & Sewing Bookings</header>
+    <main>
+        <p>
+            Book your nail and sewing appointments with ease. Choose a service, select a time, and confirm your booking!
+        </p>
+        <h2>Select Nail Type</h2>
+        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem;">
+            <div style="text-align: center;"></div>
+                <img src="https://www.pinterest.com/pin/123456789/" alt="Acrylic Nails" style="width: 8rem; height: 8rem; border-radius: 0.5rem; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);" />
+                <p style="margin-top: 0.5rem; font-size: 1.125rem; font-weight: 500;">Acrylic Nails</p>
+            </div>
+            <div style="text-align: center;">
+                <img src="https://www.pinterest.com/pin/987654321/" alt="Gel Nails" style="width: 8rem; height: 8rem; border-radius: 0.5rem; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);" />
+                <p style="margin-top: 0.5rem; font-size: 1.125rem; font-weight: 500;">Gel Nails</p>
+            </div>
+            <div style="text-align: center;">
+                <img src="https://www.pinterest.com/pin/135792468/" alt="Dip Powder Nails" style="width: 8rem; height: 8rem; border-radius: 0.5rem; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);" />
+                <p style="margin-top: 0.5rem; font-size: 1.125rem; font-weight: 500;">Dip Powder Nails</p>
+            </div>
+            <div style="text-align: center;">
+                <img src="https://www.pinterest.com/pin/246813579/" alt="Polygel Nails" style="width: 8rem; height: 8rem; border-radius: 0.5rem; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);" />
+                <p style="margin-top: 0.5rem; font-size: 1.125rem; font-weight: 500;">Polygel Nails</p>
+            </div>
+            <div style="text-align: center;">
+                <img src="https://www.pinterest.com/pin/369258147/" alt="Press-On Nails" style="width: 8rem; height: 8rem; border-radius: 0.5rem; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);" />
+                <p style="margin-top: 0.5rem; font-size: 1.125rem; font-weight: 500;">Press-On Nails</p>
+            </div>
+        </div>
+        <button style="margin-top: 1.5rem;">Book Now</button>
+    </main>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
+</html>
